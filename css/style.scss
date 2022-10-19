@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Gilroy Regular';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1820px;
+    margin: 0 auto;
+}
+
+.container-form {
+    max-width: 780px;
+    margin: 120px auto 160px 359px;
+    @media(max-width: 1460px) {
+        margin: 121px auto 404px 359px;
+    }
+    @media(max-width: 923px) {
+        margin: 121px auto 404px 42px;
+    }
+    @media(max-width: 426px) {
+        margin: 121px auto 404px 0px;
+    }
+}
+
+.container-footer {
+    padding: 42px 0px 20px 359px;
+    max-width: 1920px;
+    background: linear-gradient(93.29deg, #388AF3 21.04%, #A483E2 88.77%);
+    @media(max-width: 1460px) {
+        padding: 37px 72px 26px 40px;
+    }
+    @media(max-width: 769px) {
+        padding: 37px 0px 26px 00px;
+    }
+}
+
+
+@import '_nav.scss';
+@import '_contact.scss';
+@import '_footer.scss';

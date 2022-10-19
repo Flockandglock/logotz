@@ -1,0 +1,195 @@
+.footer {
+    max-width: 1210px;
+    // height: 302px;
+    // padding-top: 42px;
+    // margin-left: 359px;
+   
+    @media (max-width: 1460px)  {
+        max-width: 810px;
+    }
+    
+    &__logo {
+        path {
+            fill:#FFFFFF;
+        }
+    }
+    .title {
+        display: flex;
+        align-items:center;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
+    .circle {
+        width: 9px;
+        height: 9px;
+        margin-left: 10px;
+        background: #FFFFFF;
+        border-radius: 50%;
+    }
+    &__info {
+        // width: 1203px;
+        // margin-left: 516px;
+        // margin-right: 0;
+        display: flex;
+        justify-content: flex-start;
+        &-services {
+            // max-width: 186px;
+            margin-left: 196px;
+            color: #FFFFFF;
+            p:nth-last-child(-n + 2) {
+                margin-top: 20px;
+            }
+        }
+        &-about {
+            // max-width: 117px;
+            margin-left: 122px;
+            color: #FFFFFF;
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            .project {
+                margin-top: 20px;
+            }
+            a:nth-last-child(-n + 2) {
+                display: block;
+                margin-top: 20px;
+            }
+        }
+        &-contacts {
+            // max-width: 180px;
+            margin-left: 172px;
+            color: #FFFFFF;
+            
+            a {
+                display: block;
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            .arrow {
+                margin-left: 9px;
+            } 
+            a:nth-last-child(-n + 2) {
+                
+                margin-top: 20px;
+            }
+        }
+        &-wrapper {
+            display: flex;
+        }
+        &-sn {
+            margin-left: 74px;
+            margin-top: 43px;
+            // width: 34px;
+            div:nth-last-child(1) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__addit {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1146px;
+        // margin-left: 516px;
+        margin-top: 49px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+        // p:nth-child(1) {
+        //     margin-right: 641px;
+        // }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+@media(max-width: 993px) {
+    .footer {
+        max-width: 810px;
+        // height: 471px;
+        
+        &__info {
+            max-width: 922px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 40px;
+            &-wraplogo {
+                flex: 100%;
+            }
+            div {
+                
+            }
+            
+            &-services {
+                margin-left: 0px;
+                flex-basis: 17%;
+            }
+            &-about {
+                margin-left: 73px;
+                flex-basis: 3%;
+            }
+            &-contacts {
+                margin-left: 131px;
+                flex-basis: 33%;
+            }
+            &-sn {
+                margin-top: 0px;
+                
+                
+            }
+        }
+        &__logo {
+            // margin-right: 720px;
+            margin-bottom: 50px;
+        }
+        &__addit {
+            max-width: 922px;
+            margin-left: 40px;
+            margin-top: 126px;
+            // p:nth-child(1) {
+            //     margin-right: 243px;
+            // }
+        }
+    }
+}
+
+@media(max-width: 426px) {
+    .footer {
+        // width: 414px;
+        // height: 776px;
+        &__info {
+            // width: 400px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            &-wrapper {
+                // width: 400px;
+            }
+            &-services {
+                margin-left: 0;
+            }
+            &-about {
+                margin-left: 0;
+            }
+            &-contacts {
+                margin-left: 0;
+            }
+            &-sn {
+                margin-top: 37px;
+            }
+        }
+        &__addit {
+            // width: 400px;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 57px;
+            p:nth-child(1) {
+                width: 238px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
